@@ -7,7 +7,7 @@ export const HomeContainer = styled.div`
   grid-gap: 1rem;
   padding: 0 5vw;
   ${breakpoint("tablet", "down")} {
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: 1fr;
   }
 `;
 
