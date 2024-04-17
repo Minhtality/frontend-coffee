@@ -17,7 +17,7 @@ export default function Nav() {
   }, 0);
 
   const returnHref = () => {
-    if (pathname === "/coffee" || pathname.startsWith("/product")) {
+    if (pathname === "/coffee" || pathname?.startsWith("/product")) {
       return "/coffee";
     } else {
       return "/";
@@ -27,7 +27,7 @@ export default function Nav() {
   return (
     <Styled.NavWrapper>
       <Link href={returnHref()}>Good Soup.</Link>
-      {(pathname === "/coffee" || pathname.startsWith("/product")) && (
+      {(pathname === "/coffee" || pathname?.startsWith("/product")) && (
         <Styled.NavItems>
           <Styled.Item onClick={() => setShowCart(true)}>
             <FiShoppingBag />
